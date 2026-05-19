@@ -133,4 +133,4 @@ Access the app at `http://localhost:8000`
 
 ## 📝 License
 
-This project was created for academic purposes — D3 Final Year Project, 2022.
+This project was created for academic purposes — D3 Final Year Project — Bali State Polytechnic, 2022.
