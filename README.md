@@ -1,65 +1,136 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# 🏥 Medical Certificate Service Information System
+### RSUD Wangaya Denpasar City
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-## About Laravel
+> A web-based information system for digitizing the medical certificate request process at the Medical Records Installation of RSUD Wangaya, Denpasar City. Built as a Final Year Project for the D3 Informatics Management Program in 2022.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 📋 Background
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+The medical certificate service at RSUD Wangaya was previously handled entirely manually — applicants had to visit the counter in person, and staff used manual control books to track submissions. This system was built to digitize the entire process, making it more efficient, transparent, and monitorable in real-time.
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 📸 Screenshots
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
+### Landing Page
+![Landing Page](screenshots/landing_page.png)
+The main page of the application, displaying service information and login buttons for both applicants and staff.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### Applicant Dashboard
+![Applicant Dashboard](screenshots/dashboard_pemohon.png)
+The dashboard view after an applicant successfully logs in, showing a summary of ongoing medical certificate submission statuses.
 
-### Premium Partners
+### Submission Request Form
+![Submission Request Form](screenshots/form_pengajuan.png)
+The form page for submitting a medical certificate request, including applicant details, the type of certificate needed, and required document uploads.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+### Staff Dashboard
+![Staff Dashboard](screenshots/dashboard_petugas.png)
+The dedicated dashboard for medical records staff, displaying a summary of incoming submissions that require action.
 
-## Contributing
+### Manage Submissions
+![Manage Submissions](screenshots/kelola_pengajuan.png)
+The submission management page for staff, equipped with search functionality, date range filters, and *accept*, *recheck*, or *decline* actions for each submission.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## ✨ Features
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Applicant
+- 📝 **Registration & Login** — authentication for applicants
+- 📄 **Submit Request** — submit a medical certificate request online (insurance, death certificate, birth certificate, visum, etc.)
+- 📡 **Track Submission** — monitor submission status in real-time
+- 🗂️ **Submission History** — view the history of all previous submissions
+- 👤 **Profile Management** — update and manage personal information
 
-## Security Vulnerabilities
+### Staff
+- ✅ **Manage Submissions** — review submissions with *accept*, *recheck*, or *decline* actions along with comments
+- 📦 **Manage Pickups** — handle the document pickup process for applicants
+- 🗄️ **Manage Archives** — manage archived medical certificate documents
+- 👨‍⚕️ **Manage Doctors** — manage doctor data
+- 🔬 **Manage Specializations** — manage doctor specialization data
+- 📊 **Export Data** — export data to Excel based on a date range
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+## 👥 Actors / Users
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# sistem-informasi-medis
+| Actor | Description |
+|-------|-------------|
+| **Staff** | Medical records staff responsible for the release of medical information at RSUD Wangaya. Manages all hospital-side processes. |
+| **Applicant** | Patient or third party (family member, insurance provider, court) who submits a medical certificate request online. |
+| **Doctor** | Doctor responsible for filling in patient condition data as required by insurance providers. |
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Technology |
+|----------|------------|
+| Backend | PHP, Laravel |
+| Frontend | Bootstrap, Blade Template |
+| Database | MySQL |
+| Development Method | Waterfall |
+
+---
+
+## ⚙️ Installation & Setup
+
+### Prerequisites
+- PHP >= 7.4
+- Composer
+- MySQL
+- Node.js & NPM
+
+### Steps
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/prayoga01/sistem-informasi-medis.git
+cd sistem-informasi-medis
+
+# 2. Install PHP dependencies
+composer install
+
+# 3. Install frontend dependencies
+npm install && npm run dev
+
+# 4. Copy the environment file
+cp .env.example .env
+
+# 5. Generate app key
+php artisan key:generate
+
+# 6. Configure the database in .env
+DB_DATABASE=your_database_name
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+
+# 7. Run migrations & seeders
+php artisan migrate --seed
+
+# 8. Start the development server
+php artisan serve
+```
+
+Access the app at `http://localhost:8000`
+
+---
+
+## 👨‍💻 Author
+
+**Yoga Pratama**
+- GitHub: [@prayoga01](https://github.com/prayoga01)
+
+---
+
+## 📝 License
+
+This project was created for academic purposes — D3 Final Year Project, 2022.
